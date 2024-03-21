@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous"><!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="sheets.css">
+    <title>
+        Tytuł strony / Page tile
+    </title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid navv">
+        <a class="navbar-brand"><i class="bi bi-car-front-fill"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <div class="dropdown dropdown-item innerNav">
+                <button class="btn btn-secondary dropdown-toggle dropdown-item" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pojazdy
+                </button>
+                <ul class="dropdown-menu transparent-dropdown">
+                    <li><a class="dropdown-item" href="#">Samochody</a></li>
+                    <li><a class="dropdown-item" href="#">Przyczepy</a></li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class = "container ContentContainer row KenContainer">
+    <div class = "container row">
+
+
+        <div class="card col-sm-12 col-md-5 BMW ">
+            <img src="carPhotos/BMW.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>BMW i4</h2>
+                <ul>
+                    <li>Silnik benzynowy 999 cm³</li>
+                    <li>Skrzynia biegów manualna</li>
+                    <li>Price : 700k</li>
+                </ul>
+                <form id = "addBuyerBMW">
+                    <label for="buyerNameBMW">Name</label>
+                    <input type="text" id="buyerNameBMW" name="buyerNameBMW"><br>
+                    <button type="submit">Buy</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-3 ml-3 Merc">
+            <img src="carPhotos/merc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>Mercedes</h2>
+                <ul>
+                    <li>Silnik benzynowy 1200 cm³</li>
+                    <li>zasięg 500km</li>
+                    <li>Price : 600k</li>
+                </ul>
+                <form id = "addBuyerMerc">
+                    <label for="buyerNameMerc">Name</label>
+                    <input type="text" id="buyerNameMerc" name="buyerNameMerc"><br>
+                    <button type="submit">Buy</button>
+                </form>
+            </div>
+        </div>
+
+        <div class = "col-md-4 ml-3">
+            <form id = "commandForms">
+                <label for = "commandInput">input command : "magazineStatus" or "clientList"</label>
+                <input type = "text" id = "commandInput" name = "commandInput">
+                <button type = "submit">wykonaj</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class = "container row">
+
+
+        <div class="card col-sm-8 col-md-3 Audica" >
+            <img src="carPhotos/audica.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>Audi a5</h2>
+                <h6>Price : 500k</h6>
+            </div>
+            <form id = "addBuyerAudi">
+                <label for="buyerNameAudi">Name</label>
+                <input type="text" id="buyerNameAudi" name="buyerNameAudi"><br>
+                <button type="submit">Buy</button>
+            </form>
+        </div>
+
+        <div class="card col-sm-5 col-md-3 justKen">
+            <img src="carPhotos/just ken.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>Just Ken</h2>
+                <h6>Price : 500k</h6>
+            </div>
+            <form id = "addBuyerKen">
+                <label for="buyerNameKen">Name</label>
+                <input type="text" id="buyerNameKen" name="buyerNameKen"><br>
+                <button type="submit">Buy</button>
+            </form>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="footer">
+    c Szablony CyberAGH
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src = "carLogic.js"></script>
+</body>
+</html>
