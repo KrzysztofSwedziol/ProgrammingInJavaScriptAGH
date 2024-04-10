@@ -1,0 +1,87 @@
+
+.container{
+
+}
+.navv{
+    background-color: gold;
+    height: 50px;
+}
+.innerNav{
+    display: flex;
+    margin-left : auto;
+    width : 5rem;
+}
+.transparent-dropdown {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.transparent-dropdown .dropdown-item {
+    color: #000; /* Change color as needed */
+}
+.ContentContainer{
+    margin: 0;
+    width: 100%;
+    display: grid;
+}
+
+.BMW{
+    margin-left: 5rem;
+}
+.Merc{
+    height : 25rem;
+    margin-left: 2rem;
+}
+.Audica{
+    margin-left: auto;
+    margin-right: 2rem;
+}
+.justKen{
+    margin-right: 5em;
+}
+.footer{
+    background-color : forestgreen;
+    color : white;
+    width : 70rem;
+    margin-left: 5rem;
+}
+
+
+@keyframes rotateAnimation {
+    to{
+        transform: rotate(300deg);
+    }
+}
+.card:hover{
+    animation-play-state: paused;
+}
+.card{
+    animation-name: rotateAnimation;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .Merc {
+        margin: 0;
+        height: 25rem;
+    }
+    .BMW{
+        margin :0;
+    }
+    .Audica{
+        margin : 0;
+        margin-left: auto;
+    }
+    .justKen{
+        margin : 0;
+    }
+    .footer{
+        margin : 0;
+    }
+}
+
